@@ -1,0 +1,157 @@
+body {
+    font-family: Times New Roman,Arial, sans-serif;
+    line-height: 2.8;
+    margin: 0;
+}
+
+header {
+    background-color: #333333;
+    color: #fff;
+    padding-left: 1rem;
+    font-size: 20px;
+}
+
+nav {
+    text-align: right;
+    padding-right: 2rem;
+}
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    border: 1px solid #fff; /* Add a white border */
+    padding: 8px;          /* Add some space between the text and the border */
+    text-decoration: none;   /* Remove underlines from links */
+    color: #fff;            /* Ensure text color is white */
+    font-size: 20px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black
+}
+
+main {
+    line-height: 1;
+    padding: 0rem;
+}
+
+#OurMission {
+    text-align: left;
+    padding: 5rem;
+    padding-left: 30rem;
+    padding-right: 30rem;
+}
+
+#OurMission h2 {
+    font-size: 3.5em; /* Heading size */
+}
+
+#OurMission p {
+    font-size: 1.5em; /* Heading size */
+}
+
+/* Style the graph section */
+#graph {
+    margin-bottom: 0rem; /* Reduce margin at the bottom of graph section */
+    padding: 0rem;
+}
+
+/* Style the image */
+#graph img {
+    width: 100%;       /* Make the image take up the full width of its container */
+    height: auto;      /* Maintain aspect ratio */
+    display: block;     /* Removes extra space below the image */
+    margin: 0 auto;       /* Centers the image horizontally */
+}
+
+#about_us {
+    padding-left: 15rem;
+    padding-right: 15rem;
+    line-height: 1;
+}
+
+#about_us h2 {
+    font-size: 3em; /* Heading size */
+}
+
+#about_us p {
+    font-size: 1.2em; /* Heading size */
+}
+
+#Our_Research_Focus {
+    padding-left: 15rem;
+    padding-right: 15rem;
+    line-height: 1;
+}
+
+#Contact_us {
+    padding-left: 5rem;
+    line-height: 1;
+}
+
+#Contact_us h2 {
+    font-size: 3em;
+}
+
+#Contact_us p {
+    line-height: 0.5;    /* Improved line spacing */
+    margin-bottom: 1em; /* Space between paragraphs */
+}
+
+#team-area {
+    display: flex;            /* Use flexbox for layout */
+    flex-wrap: wrap;        /* Allow items to wrap to the next row */
+    justify-content: center; /* Center items horizontally */
+    padding: 20px;           /* Add some padding around the area */
+}
+
+/* Styling for each team member section */
+.team-member {
+    text-align: center;     /* Center content within each section */
+    margin: 20px;           /* Add spacing around each team member */
+    width: 30%;           /* Set a fixed width for each member */
+}
+
+/* Styling for the images */
+.team-member img {
+    width: 300px;           /* Set a fixed width for the images */
+    height: 380px;          /* Set a fixed height for the images */
+
+} 
+
+/* Styling for the names */
+.team-member h2 {
+    font-size: 1.2em;       /* Adjust font size as needed */
+    margin-top: 10px;       /* Add space between image and name */
+}
+.team-member p{
+    font-size: 1.2em;       /* Adjust font size as needed */
+    text-align: left;       /* Add space between image and name */
+}
+
+
+.Project {
+    text-align: left;     /* Center content within each section */
+    margin: 20px;           /* Add spacing around each team member */
+}
+.Project img{
+    width: 300px;           /* Set a fixed width for the images */
+    height: 380px;  
+
+}
+.Project h2 {
+    font-size: 1.2em;       /* Adjust font size as needed */
+    margin-top: 10px;       /* Add space between image and name */
+}
+
+.Project p{
+    font-size: 1.2em;       /* Adjust font size as needed */
+    text-align: left;       /* Add space between image and name */
+}
+
+.Project img {
+    width: 50%;           /* Set a fixed width for the images */
+    height: 50%;          
+}
