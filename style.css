@@ -37,25 +37,14 @@ main {
     padding: 0rem;
 }
 
-#OurMission {
-    text-align: left;
-    padding: 5rem;
-    padding-left: 30rem;
-    padding-right: 30rem;
-}
-
-#OurMission h2 {
-    font-size: 3.5em; /* Heading size */
-}
-
-#OurMission p {
-    font-size: 1.5em; /* Heading size */
-}
 
 /* Style the graph section */
 #graph {
+    position: relative;
+    
     margin-bottom: 0rem; /* Reduce margin at the bottom of graph section */
     padding: 0rem;
+    margin: 0 auto;
 }
 
 /* Style the image */
@@ -64,6 +53,28 @@ main {
     height: auto;      /* Maintain aspect ratio */
     display: block;     /* Removes extra space below the image */
     margin: 0 auto;       /* Centers the image horizontally */
+}
+
+.OurMission {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    background-color: rgb(0, 0, 0)
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#OurMission h2 {
+    font-size: 3.5em; /* Heading size */
+}
+
+#OurMission p {
+    font-size: 1.5em; /* Heading size */
 }
 
 #about_us {
