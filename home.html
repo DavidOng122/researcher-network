@@ -4,32 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Your Website Title</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css"> <!-- Correct placement of the link tag -->
 </head>
 <body>
     <header>
-        <h1>Institute for Minimal Access Surgical Sciences (IMASS)</h1>
-        <nav>
-            <ul>
+        <h1><a href="home.html">Institute for Minimal Access Surgical Sciences (IMASS)</a></h1>
+            <link rel="stylesheet" href="home.html">
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+            <a href="about.html" class="active">Logo</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="Team.html">Our Team</a></li>
                 <li><a href="proj.html">Projects</a></li>
                 <li><a href="publications.html">Publications</a></li>
                 <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="Team.html">Our Team</a></li>
+                    <li><a href="proj.html">Projects</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                   
+                </ul>
+            </nav>
     </header>
     <main>
         <section id="graph">
             <img src="laparoscopy-1.jpg" alt="Laparoscopy Image">
-            <div class ="OurMission">
-                <h2>Our Mission</h2>
-                <p>Welcome to a journey where innovation, proficiency, and dedication meet-paving the way for a brighter future in surgical care.</p>
-                <p>Our mission is to elevate surgical managment through cutting-edge simulation, technology, and exploring novel avenues in clinical trials. We aim to enhance expertise and significantly contribute to improving the lives of patients through nurturing surgeons from novice learners to seasoned practitioners.</p>
-            </div>
+        <div class="mission-overlay">
+            <h2>Our Mission</h2>
+            <p>Welcome to a journey where innovation, proficiency, and dedication meet-paving the way for a brighter future in surgical care.</p>
+            <p>Our mission is to elevate surgical management through cutting-edge simulation, technology, and exploring novel avenues in clinical trials. We aim to enhance expertise and significantly contribute to improving the lives of patients through nurturing surgeons from novice learners to seasoned practitioners.</p>
+        </div>
         </section>
-        
+       
     </main>
 </body>
 </html>
+
+
+
