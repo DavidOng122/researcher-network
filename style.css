@@ -49,7 +49,7 @@ main {
 
 /* Style the image */
 #graph img {
-    max-width: 100%;       /* Make the image take up the full width of its container */
+    width: 100%;       /* Make the image take up the full width of its container */
     height: auto;      /* Maintain aspect ratio */
     display: block;     /* Removes extra space below the image */
     margin: 0 auto;       /* Centers the image horizontally */
