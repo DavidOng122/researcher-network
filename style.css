@@ -9,9 +9,9 @@ header {
     color: #fff;
     padding-left: 1rem;
     padding-bottom: 1rem;
-    font-size: 20px;
+    font-size: 1rem;
+    padding-top: 1rem;
 }
-
 
 .hamburger-menu {
     width: 30px;
@@ -24,13 +24,11 @@ header {
     display: block;
     position: absolute;
     height: 3px;
-    width: 100%;
+    width: 80%;
     background: black;
     border-radius: 3px;
-    opacity: 1;
     left: 0;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
+    transition: 0.25s ease-in-out;
   }
   
   .hamburger-menu span:nth-child(1) {
@@ -38,11 +36,11 @@ header {
   }
   
   .hamburger-menu span:nth-child(2) {
-    top: 10px;
+    top: 8px;
   }
   
   .hamburger-menu span:nth-child(3) {
-    top: 20px;
+    top: 16px;
   }
   
   .hamburger-menu.active span:nth-child(1) {
@@ -59,7 +57,6 @@ header {
     transform: rotate(-135deg);
   }
   
-
 .off-screen-menu{
     display: none;
 }
@@ -71,7 +68,7 @@ header {
     width: 20%;
     max-width: 450px;
     position: absolute;
-    top: 0;
+    top: 0%;
     right: -450px;
     display: flex;
     flex-direction: column;
@@ -80,7 +77,7 @@ header {
     padding-left: 5vh;
     text-align: left;
     font-size: 3rem;
-    transition: 20.3s ease;
+    transition: 0.3s ease;
     z-index: 9999;
     right: 0;
 }
@@ -148,7 +145,6 @@ main {
 #graph {
     position: relative;
     width: 100%;
-    max-width: 1200px; /* Adjust as needed */
     margin: 0 auto;
 }
 
@@ -185,13 +181,13 @@ main {
 }
 
 #about_us {
-    padding-left: 15rem;
-    padding-right: 15rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     line-height: 1;
 }
 
 #about_us h2 {
-    font-size: 3em; /* Heading size */
+    font-size: 2rem; /* Heading size */
 }
 
 #about_us p {
@@ -199,8 +195,8 @@ main {
 }
 
 #Our_Research_Focus {
-    padding-left: 15rem;
-    padding-right: 15rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     line-height: 1;
 }
 
@@ -236,7 +232,6 @@ main {
 .team-member img {
     width: 300px;           /* Set a fixed width for the images */
     height: 380px;          /* Set a fixed height for the images */
-
 } 
 
 /* Styling for the names */
