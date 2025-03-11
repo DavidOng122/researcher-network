@@ -12,7 +12,16 @@ header {
     font-size: 1.5vw;
     padding-top: 1rem;
 }
+.search input[type=text] {
+    float: right;
+    padding: 5px;
+    border: none;
+    align-items: center;
+    font-size: 10px;
+}    
 
+  
+  
 .hamburger-menu {
     width: 30px;
     height: 30px;
@@ -307,13 +316,20 @@ main {
       padding: 8px;          /* Add some space between the text and the border */
       text-decoration: none;   /* Remove underlines from links */
       color: #fff;            /* Ensure text color is white */
-      font-size: 20px;
+      font-size: 1.5vw;
     }
     .off-screen-menu ul li a:hover {
       background-color: white;
       color: black
     }
-
+    .search input[type=text] {
+        float: right;
+        padding: 5px;
+        border: none;
+        font-size: 1.2vw;
+        align-items: center;
+    }
+      
   }
 
   @media (max-width: 768px) {
