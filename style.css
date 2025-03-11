@@ -227,19 +227,33 @@ main {
 
 
 .Project {
+    padding-left: 1vw;
+    padding-right: 1vw;
     text-align: left;     
     margin: 1%;     
     
 }
-
+.Project h1 {
+    font-size: 2vw;       /* Adjust font size as needed */
+    margin-top: 10px;       /* Add space between image and name */
+}
 
 .Project h2 {
-    font-size: 1.2em;       /* Adjust font size as needed */
+    font-size: 1.7vw;       /* Adjust font size as needed */
     margin-top: 10px;       /* Add space between image and name */
 }
 
 .Project p{
-    font-size: 1.2em;       /* Adjust font size as needed */
+    font-size: 1.2vw;       /* Adjust font size as needed */
+    text-align: left;       /* Add space between image and name */
+}
+
+.Project h3{
+    font-size: 1.5vw;       /* Adjust font size as needed */
+    text-align: left;       /* Add space between image and name */
+}
+.Project ul{
+    font-size: 1.2vw;       /* Adjust font size as needed */
     text-align: left;       /* Add space between image and name */
 }
 
