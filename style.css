@@ -227,8 +227,7 @@ main {
 
 
 .Project {
-    padding-left: 1vw;
-    padding-right: 1vw;
+
     text-align: left;     
     margin: 1%;     
     
@@ -255,6 +254,7 @@ main {
 .Project ul{
     font-size: 1.2vw;       /* Adjust font size as needed */
     text-align: left;       /* Add space between image and name */
+    padding-left: 17px;
 }
 
 .Project img {
