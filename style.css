@@ -149,33 +149,34 @@ main {
 }
 
 #about_us {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1vw;
+    padding-right: 1vw;
     line-height: 1;
-    
 }
 
 #about_us ol {
-    font-size: 1.8vw; /* Heading size */
+    font-size: 1.6vw; 
 }
 #about_us h2 {
-    font-size: 2.3vw; /* Heading size */
+    font-size: 2vw; 
 }
 #about_us h3 {
-    font-size: 1.8vw; /* Heading size */
+    font-size: 1.7vw;
 }
 #about_us p {
-    font-size: 1.5vw; /* Heading size */
+    font-size: 1.3vw; 
 }
 
+
+
 #Our_Research_Focus {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1vw;
+    padding-right: 1vw;
     line-height: 1;
 }
 
 #Contact_us {
-    padding-left: 5rem;
+    padding-left: 5vw;
     line-height: 1;
 }
 
@@ -192,7 +193,7 @@ main {
     display: flex;            /* Use flexbox for layout */
     flex-direction: column;
     gap: 2rem;
-    padding: 50px;           /* Add some padding around the area */
+    padding: 5vw;           /* Add some padding around the area */
 }
 
 /* Styling for each team member section */
@@ -215,11 +216,12 @@ main {
 
 /* Styling for the names */
 .team-member h2 {
-    font-size: 1.2em;       /* Adjust font size as needed */
-    margin-top: 10px;       /* Add space between image and name */
-}
+    font-size: 1.8vw;       /* Adjust font size as needed */
+     margin-top: 10px;      /* Add space between image and name*/
+} 
+
 .team-member p{
-    font-size: 1.2em;       /* Adjust font size as needed */
+    font-size: 1.2vw;       /* Adjust font size as needed */
     text-align: left;       /* Add space between image and name */
 }
 
@@ -252,7 +254,21 @@ main {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-  }
+}
+
+#Publications{
+    padding-left: 1vw;
+    padding-right:1vw;
+}
+
+/* #Publications h2{
+    font-size: 1.8vw;
+}
+
+#Publications ol{
+    font-size: 1vw;
+} */
+
 @media (min-width: 768px) {
     .ham-menu {
       display: none;
@@ -296,7 +312,7 @@ main {
 
     /* Styling for each team member section */
     .team-member {
-        display: flex;
+        /* display: flex; */
         flex-direction: column;   /* Stack graph and description vertically */
         align-items: center;      /* Center-align content */
         text-align: center;       /* Center-align text */
@@ -324,4 +340,9 @@ main {
         margin-top: 0;            /* Remove any top margin from paragraphs */
         text-align: left;
     }
+    .text-container{
+        flex : 1;
+        padding: 1px;
+    }
+    
 }
