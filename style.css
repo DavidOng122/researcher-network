@@ -12,13 +12,7 @@ header {
     font-size: 1.5vw;
     padding-top: 1rem;
 }
-.search-container input[type=text] {
-    float: right;
-    padding: 5px;
-    border: none;
-    align-items: center;
-    font-size: 10px;
-}    
+
 
 .hamburger-menu {
     width: 30px;
@@ -288,6 +282,7 @@ main {
 
 #Publications ol{
     font-size: 1.3vw;
+    padding-left:3.5vw;
 }
 
 @media (min-width: 768px) {
@@ -320,31 +315,20 @@ main {
       background-color: white;
       color: black
     }
-    .search-container input[type=text] {
-        float: right;
-        padding: 5px;
-        border: none;
-        font-size: 1.2vw;
+    
+    .search{
+        width: max-content;
+        display: flex;
         align-items: center;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 14px;
+        border-radius: 28px;
     }
-    
-    /* #searchResults {
-        list-style-type: none;
-        padding: 0;
+    .search-input
+    {
+        font-size: 16px;
+        color: #333333;
+        flex: 1;
     }
-    
-    #searchResults li {
-        padding: 8px;
-        background-color: #fff;
-        margin-bottom: 5px;
-        border-radius: 4px;
-        border: 1px solid #ddd;
-    }
-    
-    #searchResults li:hover {
-        background-color: #e0e0e0;
-    } */
   }
 
   @media (max-width: 768px) {
