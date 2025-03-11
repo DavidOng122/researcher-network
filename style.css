@@ -261,13 +261,13 @@ main {
     padding-right:1vw;
 }
 
-/* #Publications h2{
+#Publications h2{
     font-size: 1.8vw;
 }
 
 #Publications ol{
-    font-size: 1vw;
-} */
+    font-size: 1.3vw;
+}
 
 @media (min-width: 768px) {
     .ham-menu {
