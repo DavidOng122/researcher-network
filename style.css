@@ -182,12 +182,13 @@ main {
 }
 
 #Contact_us h2 {
-    font-size: 1.8em;
+    font-size: 2.3vw;
 }
 
 #Contact_us p {
     line-height: 0.5;    /* Improved line spacing */
     margin-bottom: 1em; /* Space between paragraphs */
+    font-size: 1.5vw;
 }
 
 #team-area {
@@ -218,8 +219,17 @@ main {
 /* Styling for the names */
 .team-member h2 {
     font-size: 1.8vw;       /* Adjust font size as needed */
-     margin-top: 10px;      /* Add space between image and name*/
+     margin-top: 10px;      /* Add space between image and name*/   
+
 } 
+.team-member a {
+    text-decoration: none;
+    color: black;
+
+} 
+.team-member a:hover{
+    color: blue;
+}
 
 .team-member p{
     font-size: 1.2vw;       /* Adjust font size as needed */
@@ -374,4 +384,98 @@ main {
         padding: 1px;
     }
     
+}
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: left;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #bbb;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+    height: 120px;
+}
+
+.required {
+    color: red;
+}
+
+button {
+    background-color: #5cb85c; /* Green button */
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #449d44;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+/*  Basic responsive design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
 }

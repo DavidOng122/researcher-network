@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Your Website Title</title>
-    <link rel="stylesheet" href="style.css"> <!-- Correct placement of the link tag -->
+    <title>Contact - IMASS</title>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
     <header>
@@ -28,12 +28,44 @@
         </div>
     </header>
     <main>
+        
+        <h1>Contact Us</h1>
+        <div class="container">
+            <form action="process_form.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number <span class="required">*</span></label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>                   
+
+                <div class="form-group">
+                    <label for="hear_about_us">How Did You Hear About Us?</label>
+                    <input type="text" id="hear_about_us" name="hear_about_us">
+                </div>
+    
+                <div class="form-group">
+                    <label for="how_can_we_help">How Can We Help You? <span class="required">*</span></label>
+                    <textarea id="how_can_we_help" name="how_can_we_help" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
        <section id="Contact_us">
-           <h2>Contact us</h2>
-           <p>Department of Surgery</p>
-           <p>3rd Floor Z Block</p>
-           <p>409 Taché Avenue,</p>
-           <p>Winnipeg, Manitoba R2H 2A6</p>
+           
+            <h2>Department of Surgery</h2>
+            <address>
+                <p>3rd Floor Z Block</p>
+                <p>409 Taché Avenue,</p>
+                <p>Winnipeg, Manitoba R2H 2A6</p>
+            </address>
            <p><a href="mailto:ummisresearch@gmail.com">ummisresearch@gmail.com</a></p>
            <p>(204) 258-1479</p>
        </section>
