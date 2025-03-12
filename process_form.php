@@ -1,25 +1,24 @@
 <?php
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Retrieve form data
-    $name = $_POST['name'] ?? '';
-    $email = $_POST['email'] ?? '';
-    $phone = $_POST['phone'] ?? '';
-    $hear_about_us = $_POST['hear_about_us'] ?? '';
-    $how_can_we_help = $_POST['how_can_we_help'] ?? '';
+    // Retrieve and sanitize form data
+    $name = htmlspecialchars(trim($_POST['name'] ?? ''));
+    $email = filter_var(trim($_POST['email'] ?? ''), FILTER_SANITIZE_EMAIL);
+    $phone = htmlspecialchars(trim($_POST['phone'] ?? ''));
+    $hear_about_us = htmlspecialchars(trim($_POST['hear_about_us'] ?? ''));
+    $how_can_we_help = htmlspecialchars(trim($_POST['how_can_we_help'] ?? ''));
 
-    // Validate form data (you can add more validation as needed)
-    // if (empty($name) || empty($email) || empty($phone) || empty($facility) || empty($country) || empty($how_can_we_help)) {
-    //     echo "Please fill all required fields.";
-    //     exit;
-    // }
+    // Validate required fields
+    if (empty($name) || empty($email) || empty($phone) || empty($how_can_we_help)) {
+        echo "Error: All required fields must be filled out.";
+        exit;
+    }
 
-    // Sanitize data to prevent XSS
-    $name = htmlspecialchars($name);
-    $email = filter_var($email, FILTER_SANITIZE_EMAIL);
-    $phone = htmlspecialchars($phone);
-    $hear_about_us = htmlspecialchars($hear_about_us);
-    $how_can_we_help = htmlspecialchars($how_can_we_help);
+    // Validate email format
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Error: Invalid email format.";
+        exit;
+    }
 
     // Prepare email content
     $to = "yangyangyang111111@gmail.com"; // Replace with your email address
@@ -30,7 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message .= "How did they hear about us: $hear_about_us\n";
     $message .= "How can we help: $how_can_we_help\n";
 
-    $headers = "From: $email";
+    $headers = "From: no-reply@yourdomain.com\r\n";
+    $headers .= "Reply-To: $email\r\n";
 
     // Send email
     if (mail($to, $subject, $message, $headers)) {
@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Sorry, there was an error sending your message. Please try again later.";
     }
 } else {
-    // If not a POST request, redirect to the form page
+    // Redirect to the contact form if accessed directly
     header("Location: contact.html");
     exit;
 }
