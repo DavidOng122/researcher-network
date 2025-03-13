@@ -8,11 +8,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $hear_about_us = htmlspecialchars(trim($_POST['hear_about_us'] ?? ''));
     $how_can_we_help = htmlspecialchars(trim($_POST['how_can_we_help'] ?? ''));
 
-    // Validate required fields
-    if (empty($name) || empty($email) || empty($phone) || empty($how_can_we_help)) {
-        echo "Error: All required fields must be filled out.";
-        exit;
-    }
+    // // Validate required fields
+    // if (empty($name) || empty($email) || empty($phone) || empty($how_can_we_help)) {
+    //     echo "Error: All required fields must be filled out.";
+    //     exit;
+    // }
 
     // Validate email format
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -42,5 +42,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Redirect to the contact form if accessed directly
     header("Location: contact.html");
     exit;
+}
+else{
+    echo "invalid request";
 }
 ?>
