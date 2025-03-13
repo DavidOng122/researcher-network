@@ -40,10 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 } else {
     // Redirect to the contact form if accessed directly
-    header("Location: contact.html");
-    exit;
+    echo "Invalid request";
 }
-else{
-    echo "invalid request";
-}
+
 ?>
