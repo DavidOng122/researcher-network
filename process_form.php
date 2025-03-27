@@ -8,11 +8,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $hear_about_us = htmlspecialchars(trim($_POST['hear_about_us'] ?? ''));
     $how_can_we_help = htmlspecialchars(trim($_POST['how_can_we_help'] ?? ''));
 
-    // // Validate required fields
-    // if (empty($name) || empty($email) || empty($phone) || empty($how_can_we_help)) {
-    //     echo "Error: All required fields must be filled out.";
-    //     exit;
-    // }
+    // Validate required fields
+    if (empty($name) || empty($email) || empty($phone) || empty($how_can_we_help)) {
+        echo "Error: All required fields must be filled out.";
+        exit;
+    }
 
     // Validate email format
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Prepare email content
-    $to = "yangyangyang111111@gmail.com"; // Replace with your email address
+    $to = "example@gmail.com"; // Replace with your email address
     $subject = "New Contact Form Submission";
     $message = "Name: $name\n";
     $message .= "Email: $email\n";

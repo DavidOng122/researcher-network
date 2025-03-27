@@ -11,8 +11,8 @@ header {
     padding-bottom: 1rem;
     font-size: 1.5vw;
     padding-top: 1rem;
-}
 
+}
 
 .hamburger-menu {
     width: 30px;
@@ -111,25 +111,25 @@ main {
     padding: 0rem;
 }
 
-#graph {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
+.graph-container {
+    flex-grow: 1; /* Makes the graph container fill the remaining space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevents scrolling */
 }
-
-#graph img {
+.graph-image {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    object-fit: cover; /* Ensures the graph image covers its container */
 }
-
 .mission-overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+
     color: white;
     padding: 20px;
     overflow-y: auto; /* Allow scrolling if content is too long */
@@ -333,8 +333,7 @@ main {
     .search{
         width: max-content;
         display: flex;
-        align-items: center;
-        padding: 14px;
+
         border-radius: 28px;
     }
     .search-input
@@ -482,4 +481,51 @@ button:hover {
         flex-direction: column;
         gap: 0;
     }
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+header {
+    flex-shrink: 0;
+    /* Add a specific height if needed, e.g.: */
+    /* height: 60px; */
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+#home{
+    overflow: hidden; 
+}
+#graph {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+.graph-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mission-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
