@@ -211,10 +211,11 @@ main {
 }
 /* Styling for the images */
 .team-member img {
-    width: 300px;           /* Set a fixed width for the images */
-    height: 380px;          /* Set a fixed height for the images */
-    object-fit: scale-down;
-} 
+    width: 300px;
+    height: 300px;              /* Make width and height equal for a perfect circle */
+    object-fit: cover;          /* Ensures the image covers the area without distortion */
+    border-radius: 50%;         /* Makes the image a circle */
+}
 
 .text-container{
     flex : 1;
