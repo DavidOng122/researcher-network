@@ -214,6 +214,11 @@ main {
     height: 380px;          /* Set a fixed height for the images */
     object-fit: scale-down;
 } 
+.team-member img {
+  background-color: #f0f0f0; /* light background behind image */
+  padding: 0.5rem;            /* space between image and background */
+  border-radius: 4px;         /* optional */
+}
 
 .text-container{
     flex : 1;
