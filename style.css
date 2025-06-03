@@ -214,11 +214,6 @@ main {
     height: 380px;          /* Set a fixed height for the images */
     object-fit: scale-down;
 } 
-.team-member img {
-  background-color: #665555; /* light background behind image */
-  padding: 10rem;            /* space between image and background */
-  border-radius: 10px;         /* optional */
-}
 
 .text-container{
     flex : 1;
@@ -281,12 +276,7 @@ main {
     display: block;
     width: 30%;           /* Set a fixed width for the images */
     height: 30%;
-}
-.Project img {
-    width: 100%;
-    height: auto;
-    max-width: 600px; /* Limit the maximum width of the image */
-    margin-bottom: 20px; /* Add space below the image */
+        
 }
 .center {
     display: block;
