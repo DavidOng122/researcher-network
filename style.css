@@ -200,7 +200,7 @@ main {
     flex-direction: column;
     gap: 2rem;
     padding: 5vw;           /* Add some padding around the area */
-    background: linear-gradient(to right, black 50%, white 50%);
+    background: linear-gradient(to right, yellow 50%, white 50%);
 }
 
 /* Styling for each team member section */
