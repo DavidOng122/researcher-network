@@ -215,9 +215,9 @@ main {
     object-fit: scale-down;
 } 
 .team-member img {
-  background-color: #f0f0f0; /* light background behind image */
-  padding: 0.5rem;            /* space between image and background */
-  border-radius: 4px;         /* optional */
+  background-color: #665555; /* light background behind image */
+  padding: 10rem;            /* space between image and background */
+  border-radius: 10px;         /* optional */
 }
 
 .text-container{
